@@ -1,10 +1,16 @@
+<!-- Form that sends the names to /name using a GET request -->
+<!-- The values are added to the URL as a query string (req.query) -->
 <h3>GET Method</h3>
 <form action="/name" method="GET">
+    <!-- The name attribute is what the server uses to read each value -->
     First name: <input type="text" name="firstname"><br>
     Last name: <input type="text" name="lastname"><br>
+    <!-- Submit button sends the form to the server -->
     <input type="submit" value="Submit">
 </form>
 
+<!-- Form that sends the names to /name using a POST request -->
+<!-- The values are sent in the request body instead of the URL (req.body) -->
 <h3>POST Method</h3>
 <form action="/name" method="POST">
     First name: <input type="text" name="firstname"><br>
